@@ -71,7 +71,26 @@ document.write(" "+getSum(2,2).toString());
         return;
     }
 
-    
+//Interfaces------------------------------
+interface Intershow{
+    title: string;
+    texto: string;
+}
+
+
+function showAll(todo: Intershow) {
+    console.log(`${todo.title} - ${todo.texto}`)
+}
+
+showAll(
+    {
+        title: "Eat dinner",
+        texto: "Lorem"
+    }
+)
+
+
+
 
 
 

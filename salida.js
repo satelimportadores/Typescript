@@ -51,3 +51,10 @@ document.write(" " + getName("Juan"));
 function myVoidFunction() {
     return;
 }
+function showAll(todo) {
+    console.log(todo.title + " - " + todo.texto);
+}
+showAll({
+    title: "Eat dinner",
+    texto: "Lorem"
+});
