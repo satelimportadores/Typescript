@@ -14,8 +14,13 @@ npm i typescript -g
 //Ver la version:
 tsc --version
 
-//convertir codigo TS a JS
+//convertir codigo TS a JS manualmente
 tsc salida.ts
 //Creara un archivo salida.js
+	//Automatizar el proceso:
+	tsc salida.ts -w
+
+
+
 
 
