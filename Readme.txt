@@ -8,5 +8,14 @@ Convierte código de TypeScript a JavaScript (la versión que indiquemos) para q
 
 Los errores se muestran mientras se escribe el código.
 
+//Instalacion:
+npm i typescript -g
+
+//Ver la version:
+tsc --version
+
+//convertir codigo TS a JS
+tsc salida.ts
+//Creara un archivo salida.js
 
 
