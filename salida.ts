@@ -115,13 +115,37 @@ class User{
     private AgeInYeras(){
         return this.age + 'Years';
     }
+
+    payInvoice(){
+        console.log(`${this.name} paide Invoice`);
+    }
+
+
 }
 
 var john = new User('John',"aaa@44.com",40);
 document.write(`${john.name} - ${john.email}`);
 
+//Herencia---------------------------------------
 
+class Member extends User {
+    id: number;
 
+    constructor(id, name, email, age){
+        super(name,email,age)
+
+        this.id= id;
+    }
+    //Heredar metodo
+    pay(){
+        super.payInvoice();
+    }
+
+}
+
+var gordon = new Member(1,"Satel","satel@satel.com",25);
+
+console.log(gordon.payInvoice());
 
 
 
