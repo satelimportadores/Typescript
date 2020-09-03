@@ -89,6 +89,38 @@ showAll(
     }
 )
 
+//Clases-------------------------------------
+
+
+
+class User{
+    name: string;
+    public email:string;
+    protected age: number;
+
+    constructor(name: string,email:string, age:number) {
+        this.name = name;
+        this.email = email;
+        this.age = age;
+    }
+
+    register(){
+        console.log(`${this.name} is registered!`);
+    }
+
+    showMeAge(){
+        return this.age;
+    }
+
+    private AgeInYeras(){
+        return this.age + 'Years';
+    }
+}
+
+var john = new User('John',"aaa@44.com",40);
+document.write(`${john.name} - ${john.email}`);
+
+
 
 
 

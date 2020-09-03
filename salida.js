@@ -58,3 +58,23 @@ showAll({
     title: "Eat dinner",
     texto: "Lorem"
 });
+//Clases-------------------------------------
+var User = /** @class */ (function () {
+    function User(name, email, age) {
+        this.name = name;
+        this.email = email;
+        this.age = age;
+    }
+    User.prototype.register = function () {
+        console.log(this.name + " is registered!");
+    };
+    User.prototype.showMeAge = function () {
+        return this.age;
+    };
+    User.prototype.AgeInYeras = function () {
+        return this.age + 'Years';
+    };
+    return User;
+}());
+var john = new User('John', "aaa@44.com", 40);
+document.write(john.name + " - " + john.email);
